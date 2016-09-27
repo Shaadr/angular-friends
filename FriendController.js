@@ -1,16 +1,17 @@
 angular.module('FB')
 .controller('FriendController', function($scope){
   $scope.test = 'Hello World';
-  // $scope.sortProp;
-  // $scope.sortDirection = true;
 
-  // $scope.friends = $scope.friends.map(function(){
-  //   for (var prop in friends) {
-  //     if(friends.current_location.prop = null) {
-  //       friends.current_location.prop = ''
-  //     }
-  //   }
-  // })
+  $scope.sortProp = [
+            {name: 'Name', value: 'name'},
+            {name: '#Friend', value: 'friend_count'},
+            {name: 'City', value: 'current_location.city'},
+            {name: 'State', value: 'current_location.state'},
+            {name: 'Country', value: 'current_location.country'}
+          ];
+
+
+
   $scope.friends = [
     {
       "name": "Preston McNeil",

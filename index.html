@@ -21,14 +21,15 @@
         <input class="form-control" placeholder="Search Name" ng-model="friendFilter.name">
         <input class="form-control" placeholder="Search Location" ng-model="friendFilter.current_location.name">
 
+        <select ng-model='sortProp' ng-options='prop.value as prop.name for prop in sortProp'> </select>
 
-        <select class="input-medium" ng-model="sortProp">
+        <!-- <select class="input-medium" ng-model="sortProp">
           <option value="name">Name</option>
           <option value="friend_count">#Friends</option>
           <option value="current_location.city">City</option>
           <option value="current_location.state">State</option>
           <option value="current_location.country">Country</option>
-        </select>
+        </select> -->
 
         <select class="input-medium" ng-model="sortDirection">
           <option value="true">Descending</option>
@@ -63,7 +64,7 @@
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
   <script src="app.js"></script>
   <script src="FriendController.js"></script>
 </body>
